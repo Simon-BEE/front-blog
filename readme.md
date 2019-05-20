@@ -13,4 +13,4 @@ Quelques critères :
 
 # Maquette
 
-!(Maquette)[assets/img/maquette.jpg]
+![Maquette](assets/img/maquette.jpg)
