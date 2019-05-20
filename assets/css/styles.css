@@ -362,7 +362,8 @@ footer{
 .top-link {
 	background-color: rgba(255,255,255,0.5);
 	border-radius: 5px;
-	padding: 5% 10%;
+	padding: 5% 12% 5% 16%;
+	text-align: center;
 }
 
 .top-footer{
