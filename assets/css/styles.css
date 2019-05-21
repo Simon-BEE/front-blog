@@ -12,6 +12,16 @@ body{
 		background-color: #fff;
 }
 
+.bold{
+	font-weight: bold;
+}
+
+.small{
+	color: #afafaf;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
 @media (min-width: 1024px){
 	.page{
 		width: 1024px;
@@ -111,7 +121,7 @@ header {
 }
 
 /*-----------------
-------ARTICLE-------
+------INDEX--------
 -----------------*/
 @media (max-width: 767px){
 	article{
@@ -173,6 +183,48 @@ figcaption{
 	bottom: 10px;
 	color: #fff;
 	text-align: center;
+}
+
+/*-----------------
+----CATEGORIES-----
+-----------------*/
+
+.page-cat .image{
+	display: flex;
+	justify-content: center;
+	padding: 2% 2%;
+	width: 100%;
+}
+
+.page-cat .image img{
+	border-radius: 10px;
+	box-shadow: 1px 10px 50px #efefef;
+}
+
+@media (max-width: 767px){
+	.page-cat .image img{
+		width: 85%;
+		height: 96%;
+	}
+}
+
+.page-cat{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+}
+
+.category{
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+
+	transition: height 5s ease-in-out;
+}
+
+.category:hover, .category:focus, .category:active{
+	height: 100%;
 }
 
 /*-----------------
@@ -257,6 +309,105 @@ figcaption{
 }
 
 /*-----------------
+-----ARTICLE1------
+-----------------*/
+
+.page-article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2% 4%;
+}
+
+.one-art{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.one-art > *{
+	margin-bottom: 2%;
+}
+
+.one-art p{
+	line-height: 30px;
+}
+
+.one-art .image{
+	display: flex;
+	justify-content: center;
+	padding: 2% 2%;
+	width: 100%;
+}
+
+.one-art .image img{
+	border-radius: 10px;
+	box-shadow: 1px 10px 50px #efefef;
+}
+
+.one-art .bold{
+	align-self: flex-end;
+}
+
+@media (max-width: 767px){
+	.one-art .image img{
+		width: 85%;
+		height: 96%;
+	}
+}
+
+@media (min-width: 768px){
+	.one-art aside, .end{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.one-art aside .image, .end .image{
+		padding: 0;
+		height: 100%;
+	}
+
+	.one-art aside .image {
+		margin-right: 2%;
+	}
+
+	.end .image, .end :nth-child(2){
+		margin-left: 2%;
+	}
+
+}
+
+/*-----------------
+-----COMMENT-------
+-----------------*/
+
+.commentary{
+	background-color: #efefef;
+	padding: 1% 1%;
+}
+
+.inside{
+	background-color: #fff;
+	padding: 1% 1%;
+}
+
+.inside > *{
+	margin-bottom: 2%;
+}
+
+.posting > *{
+	margin: 1% 0;
+}
+
+.posting input, textarea{
+	padding: 1%;
+	border: none;
+	border-radius: 5px;
+}
+
+/*-----------------
 -------FORM--------
 -----------------*/
 
@@ -283,7 +434,7 @@ button{
 	margin-bottom: 5%;
 }
 
-form.login, form.register{
+form.login, form.register, form.posting{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -297,7 +448,7 @@ form.login, form.register{
 	text-align: center;
 }
 
-.login button, .register button {
+.login button, .register button, .posting button {
   z-index: 1;
   position: relative;
   font-size: inherit;
@@ -309,11 +460,11 @@ form.login, form.register{
   background-color: #00BCD4;
 }
 
-.login button:hover, .login button:focus, .register button:hover, .register button:focus {
+.login button:hover, .login button:focus, .register button:hover, .register button:focus, .posting button:hover, .posting button:focus {
   cursor: pointer;
 }
 
-.login button::before, .register button::before {
+.login button::before, .register button::before, .posting button::before {
   content: '';
   z-index: -1;
   position: absolute;
@@ -326,7 +477,7 @@ form.login, form.register{
   transform: scale(1);
 }
 
-.login button:hover::before, .login button:focus::before, .register button:hover::before, .register button:focus::before {
+.login button:hover::before, .login button:focus::before, .register button:hover::before, .register button:focus::before, .posting button:focus::before, .posting button:hover::before {
   transition: all 0.75s ease-in-out;
   transform-origin: center;
   transform: scale(1.75);
@@ -357,6 +508,7 @@ footer{
 	align-items: center;
 	height: 100px;
 	width: 100%;
+	margin-top: 4%;
 }
 
 .top-link {
