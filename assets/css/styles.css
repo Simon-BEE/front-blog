@@ -544,7 +544,7 @@ footer p{
 	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	letter-spacing: 2px;
-	line-height: 0;
+	line-height: 1!important;
 }
 
 footer i{
