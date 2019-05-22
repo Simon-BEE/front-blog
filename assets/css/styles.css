@@ -9,7 +9,8 @@ a {
 }
 
 body{
-		background-color: #fff;
+	background-color: #fff;
+	line-height: 1;
 }
 
 .bold{
@@ -164,6 +165,11 @@ header {
 	padding: 5% 4%;
 }
 
+.principal p{
+	line-height: 18px;
+	margin-top: 1%;
+}
+
 .more {
 	display: flex;
 	justify-content: space-between;
@@ -194,6 +200,14 @@ figcaption{
 	justify-content: center;
 	padding: 2% 2%;
 	width: 100%;
+}
+
+.page-cat .article-title{
+	width: 100%;
+}
+
+.page-cat h2{
+	font-size: 20px;
 }
 
 .page-cat .image img{
@@ -530,6 +544,7 @@ footer p{
 	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	letter-spacing: 2px;
+	line-height: 0;
 }
 
 footer i{
@@ -632,4 +647,41 @@ footer i{
 		text-transform: uppercase;
 		letter-spacing: 1px;
 	}
+}
+
+/*-----------------*/
+.cat-acc{
+	width: 90%;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 4%;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+  background-color: #efefef;
+}
+
+.active{
+	background-color: #fff;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+.panel > *{
+	width: 100%;
 }
