@@ -15,4 +15,4 @@ Quelques critères :
 
 ![Maquette](assets/img/maquette.jpg)
 ![Maquette2](assets/img/maquette2.jpg)
-![Maquette3](assets/img/maquette3.jpg)
+![Maquette3](assets/img/maquette4.jpg)
