@@ -3,6 +3,7 @@
 # Description
 
 Développer la partie front d'un blog
+
 Quelques critères : 
 * Maquettage
 * Interface statique
